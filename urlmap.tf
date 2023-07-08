@@ -15,3 +15,4 @@ resource "google_compute_url_map" "serverlesshttploadbalancer" {
         paths   = ["/fetchdata"]
         service = google_compute_backend_service.backendfetchdata.self_link
         }
+  }
