@@ -14,3 +14,19 @@ variable "load_balancing_scheme" {
   type        = string
   default     = "EXTERNAL_MANAGED"
 }
+
+variable "my_neg_name" {
+  description = "My NEGs names"
+  default       =   "function-neg-"
+  type          =   string
+}
+
+variable "backend_name" {
+    type = map(string)
+    default = {
+        my-backend-1 = "northamerica-northeast1"
+        my-backend-2 = "us-central1"
+        my-backend-3 = "northamerica-northeast1"
+        my-backend-4 = "us-central1"
+    }
+}
