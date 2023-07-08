@@ -12,7 +12,7 @@ resource "google_compute_backend_service" "backendfetchdata" {
     group = google_compute_region_network_endpoint_group.negfetchdata1.self_link
   }
 
-  backend {
+    backend {
     group = google_compute_region_network_endpoint_group.negfetchdata2.self_link
   }
 }
