@@ -1,11 +1,11 @@
 variable "project_id" {
   description = "mcti project id"
   default     = "montreal-project-mcit"
-  typ = string
+  type = string
 }
 
 variable "backend_name" {
-  name      = "backendfetchdata"
+  default   = "backendfetchdata"
   type      = string
 }
 
