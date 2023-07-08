@@ -13,6 +13,6 @@ resource "google_compute_backend_service" "my_backend_service" {
   
   backend {
     for_each = google_compute_region_network_endpoint_group.function_neg
-    group = each.name.self_link
+    group = each.self_link
   }
 }
