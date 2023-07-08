@@ -16,3 +16,4 @@ resource "google_compute_url_map" "serverlesshttploadbalancer" {
         service = google_compute_backend_service.backendfetchdata.self_link
         }
   }
+}
