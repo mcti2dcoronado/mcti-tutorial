@@ -11,8 +11,9 @@ resource "google_compute_region_network_endpoint_group" "negfetchdata2" {
   name                  = "negfetchdata2"
   network_endpoint_type = "SERVERLESS"
   region                = "northamerica-northeast1"
+  project = var.project_id
   cloud_function {
     function = "fetchData"
   }
-  project = var.project_id
+  
 }
